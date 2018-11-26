@@ -1,10 +1,18 @@
 body {
-  font-family: 'Circular', sans-serif !important;
+  font-family: 'Circular', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Circular Medium', sans-serif !important;
 }
 
 @font-face {
   font-family: 'Circular';
   src: url("lineto-circular-book.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Circular Medium';
+  src: url("lineto-circular-medium.ttf") format("truetype");
 }
 
 .container {
