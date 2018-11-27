@@ -1,18 +1,20 @@
 body {
   font-family: 'Circular', sans-serif;
 }
-
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Circular Medium', sans-serif !important;
+  font-family: 'Circular', sans-serif !important;
+  font-weight: 600 !important;
 }
 
 @font-face {
   font-family: 'Circular';
-  src: url("lineto-circular-book.otf") format("opentype");
+  font-weight: 600;
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/59912/lineto-circular-bold.woff");
 }
 @font-face {
-  font-family: 'Circular Medium';
-  src: url("lineto-circular-medium.ttf") format("truetype");
+  font-family: 'Circular';
+  font-weight: 400;
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/59912/lineto-circular-medium.woff");
 }
 
 .container {
@@ -96,9 +98,20 @@ footer {
 
 
 .bg-light {
-  background-image: linear-gradient(to right,rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.35)), url("https://images.unsplash.com/photo-1519558260268-cde7e03a0152?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9fc9b945b1c1e3b2349979d02bf9fb67&auto=format&fit=crop&w=1350&q=80") !important;
+  background-image: linear-gradient(to right,rgba(30, 30, 30, 0.35),rgba(30, 30, 30, 0.35)), url("https://images.unsplash.com/photo-1519558260268-cde7e03a0152?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9fc9b945b1c1e3b2349979d02bf9fb67&auto=format&fit=crop&w=1350&q=80") !important;
   background-size: cover !important;
   background-position: center !important;
+}
+.bg-alt {
+  background:#e2f2ff !important;
+}
+.bg-white {
+  background: #ffffff;
+  transition: ease-in-out background-color .15s;
+  cursor: pointer;
+}
+.bg-white:hover {
+  background: #e2f2ff !important;
 }
 .btn {
   border-radius: 3px;
@@ -109,6 +122,10 @@ footer {
 .btn-primary {
   background: #007AFF !important;
   border-color: #007AFF !important;
+}
+.btn-primary:hover {
+  background: #0066d3 !important;
+  border-color: #0066d3 !important;
 }
 .bg-primary {
   background: #007AFF !important;
@@ -183,6 +200,15 @@ footer {
 .underline {
   color: #ffffff !important;
 }
+.underlined {
+  text-decoration: underline !important;
+  color: #ffffff !important;
+  cursor: pointer;
+  transition: ease-in-out opacity .15s;
+}
+.underlined:hover {
+  opacity: 0.65 !important;
+}
 .text-muted-head {
   opacity: 0.65 !important;
 }
@@ -193,9 +219,9 @@ footer {
   background: #ff9900;
 }
 .bg-dark {
-  background: #000000 !important;
+  background:rgba(0, 0, 0, 0.85) !important;
 }
-.btn-outline-light {
+.btn-outline-light, .btn-light {
   opacity: 0.65 !important;
 }
 .bg-fade {
